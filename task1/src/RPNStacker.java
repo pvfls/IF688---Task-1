@@ -11,7 +11,8 @@ import java.util.function.DoubleBinaryOperator;
 
 public class RPNStacker {
     public static Stack <Double> stack = new Stack<Double>();
-
+    
+    //I like to use hashmaps because it works similarly to pythons dictionarys
     public static Map <String, DoubleBinaryOperator> exp = new HashMap<>();
     
     public static Scanner input = new Scanner(System.in);
