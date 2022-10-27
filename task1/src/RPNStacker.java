@@ -14,9 +14,9 @@ public class RPNStacker {
 
     public static Map <String, DoubleBinaryOperator> exp = new HashMap<>();
     
-    public static Scanner in = new Scanner(System.in);
+    public static Scanner input = new Scanner(System.in);
 
-    public static String[] split() { return in.nextLine().split(" \n"); }
+    public static String[] split() { return input.nextLine().split(" \n"); }
     
     // Simple code to rule out if it is a signal
     public static boolean signalDecider(String s) {
@@ -88,6 +88,6 @@ public class RPNStacker {
 
         fromFile("Calc1.stk");
         
-        in.close();
+        input.close();
     }
 }
