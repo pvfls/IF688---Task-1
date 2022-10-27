@@ -61,8 +61,8 @@ public class RPNStacker {
     }
 
     // Resolves the expression on the list of terms
-    public static Double evaluate(String[] expr) {
-        for (String s: expr) {
+    public static Double evaluate(String[] expression) {
+        for (String s: expression) {
             if (!signalDecider(s)) stack.push(Double.parseDouble(s));
             else {
                 Double a = stack.pop();
